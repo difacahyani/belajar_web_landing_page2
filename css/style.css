@@ -1,0 +1,212 @@
+.section1-1 {
+    margin-left: 200px;
+  }
+  .section1-2 {
+    margin-left: 90px;
+  }
+  .ilustration-1 {
+    height: 400px;
+  }
+  .bounceInDown{ 
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both; 
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  
+   
+  
+  @-webkit-keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-2000px);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translateY(30px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+    }
+  }
+  @-moz-keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(-2000px);
+    }
+  
+    60% {
+      opacity: 1;
+      -moz-transform: translateY(30px);
+    }
+  
+    80% {
+      -moz-transform: translateY(-10px);
+    }
+  
+    100% {
+      -moz-transform: translateY(0);
+    }
+  }
+  @-o-keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      -o-transform: translateY(-2000px);
+    }
+  
+    60% {
+      opacity: 1;
+      -o-transform: translateY(30px);
+    }
+  
+    80% {
+      -o-transform: translateY(-10px);
+    }
+  
+    100% {
+      -o-transform: translateY(0);
+    }
+  }
+  @keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-2000px);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+  
+    80% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    -moz-animation-name: bounceInDown;
+    -o-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+  }
+  .ilustration-3 {
+    height: 250px;
+  }
+  
+  .section-bg-custom {
+    background-color: #e4efff;
+  }
+  .nav-tabs {
+    --bs-nav-tabs-border-color: #fff;
+    --bs-nav-tabs-link-active-border-color: #fff #fff #000;
+  }
+  .link-tab-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 1.688rem;
+    margin-bottom: 0.4rem;
+  }
+  .link-tab-desc {
+    font-size: 1rem;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .icon-quote {
+    font-size: 6em;
+    color: #4f96ff;
+    margin-left: -16px;
+  }
+  .quote {
+    margin-top: -20px;
+    margin-right: 100px;
+    color: #717b8a;
+    font-size: 1.75rem;
+    letter-spacing: .0.2em;
+    line-height: 2.875rem;
+  }
+  .picture-tab-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 1.688rem;
+    color: #686868;
+  }
+  .picture-tab-desc {
+    font-size: 1rem;
+    letter-spacing: .005em;
+    line-height: 1.5rem;
+    color: #686868;
+  }
+  .social-icon {
+     font-size: 30px;
+  }
+  .social-icon:hover {
+    color: #ffffff !important;
+  }
+  .menu-footer {
+    display: block;
+    text-decoration: none;
+    color: rgba(255,193,7,1);
+  }
+  .menu-footer:hover {
+    color:rgba(255,193,7,1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .section1-1 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+      }
+      .section1-2 {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+      }
+      .section5-1 {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .ilustration-1 {
+          height: 300px;
+          border-radius: 50%;
+      }
+      .ilustration-2 {
+        width: 2px;
+        margin-bottom: 20px;
+      }
+      .ilustration-3 {
+          height: 250px;
+          margin-bottom: 20px;
+      }
+      .quote {
+        margin-right: 0;
+        text-align: center;
+      }
+      .img-person {
+        margin-top: 30px;
+      }
+      #footer-copyright {
+        text-align: center;
+      }
+      #footer-powered {
+        text-align: center !important;
+      }
+  }

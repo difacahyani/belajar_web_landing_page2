@@ -1,249 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/pesat.png" type="image/x-icon">  
-    <title>Landing page</title>
-    <link rel="stylesheet" href="bootstrap-5.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-      .section1-1 {
-        margin-left: 200px;
-      }
-      .section1-2 {
-        margin-left: 90px;
-      }
-      .ilustration-1 {
-        height: 400px;
-      }
-      .ilustration-3 {
-        height: 250px;
-      }
-      .section-bg-custom {
-        background-color: #e4efff;
-      }
-      .nav-tabs {
-        --bs-nav-tabs-border-color: #fff;
-        --bs-nav-tabs-link-active-border-color: #fff #fff #000;
-      }
-      .link-tab-title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        letter-spacing: .02em;
-        line-height: 1.688rem;
-        margin-bottom: 0.4rem;
-      }
-      .link-tab-desc {
-        font-size: 1rem;
-        letter-spacing: .005em;
-        line-height: 1.5rem;
-        margin-bottom: 0.8rem;
-      }
-      .icon-quote {
-        font-size: 6em;
-        color: #4f96ff;
-        margin-left: -16px;
-      }
-      .quote {
-        margin-top: -20px;
-        margin-right: 100px;
-        color: #717b8a;
-        font-size: 1.75rem;
-        letter-spacing: .0.2em;
-        line-height: 2.875rem;
-      }
-      .picture-tab-title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        letter-spacing: .02em;
-        line-height: 1.688rem;
-        color: #686868;
-      }
-      .picture-tab-desc {
-        font-size: 1rem;
-        letter-spacing: .005em;
-        line-height: 1.5rem;
-        color: #686868;
-      }
-      .social-icon {
-         font-size: 30px;
-      }
-      .social-icon:hover {
-        color: #ffffff !important;
-      }
-      .menu-footer {
-        display: block;
-        text-decoration: none;
-        color: rgba(255,193,7,1);
-      }
-      .menu-footer:hover {
-        color:rgba(255,193,7,1);
-      }
 
-      @media only screen and (max-width: 600px) {
-        .section1-1 {
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 30px;
-          }
-          .section1-2 {
-              margin-left: auto;
-              margin-right: auto;
-              text-align: center;
-          }
-          .section5-1 {
-            padding-left: 30px;
-            padding-right: 30px;
-          }
-          .ilustration-1 {
-              height: 300px;
-          }
-          .ilustration-2 {
-            width: 240px;
-            margin-bottom: 20px;
-          }
-          .ilustration-3 {
-              height: 250px;
-              margin-bottom: 20px;
-          }
-          .quote {
-            margin-right: 0;
-            text-align: center;
-          }
-          .img-person {
-            margin-top: 30px;
-          }
-          #footer-copyright {
-            text-align: center;
-          }
-          #footer-powered {
-            text-align: center !important;
-          }
-      }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Halodoc.png" type="image/x-icon">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-<header class="container-fluid p-0">
+  <header class="container-fluid p-0">
     <nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/pesat.png" alt="Logo pesat" width="40px" class="d-inline-block align-text-top">
-            PESAT
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/Halodoc.png" alt="Logo HALODOC" width="40px" class="d-inline-block align-text-top">
+          HALODOC
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-</header>
-<main class="container-fluid" style="margin-top: 67px;">
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid" style="margin-top: 50px;">
     <section class="row bg-primary text-white py-5">
-        <div class="col-sm-6 order-md-last">
-            <div class="section1-2">
-           <img src="images/tv-guy-svg-illustration-free.svg" alt="ilustration-1" class="ilustration-1">
-          </div>
+      <div class="col-sm-6 order-md-last">
+        <div class="section1-2">
+          <div class="bounceInDown">
+          <img src="images/doctor.gif" alt="ilustration-1" class="ilustration-1"></div>
         </div>
-        <div class="col-sm-6">
-            <div class="section1-1">
-                <h1 class="mb-4">Lorem ipsum dolor sit amet consectetur.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nemo a accusantium odio et quasi.</p>
-                <button class="btn btn-lg btn-warning mt-4">Button</button>
-            </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="section1-1">
+          <h1 class="mb-4">Dokter adalah profesiku.</h1>
+          <p>Halo perkenalkan nama saya Nadifa Dwi Cahyani. Saya bekerja sebagai Manajer Layanan Kesehatan.
+            Sebagai seorang dokter, yang dilakukan dalam pekerjaan saya,
+            meliputi hal berikut: yaitu mendiagnosis penyakit pasien, melakukan
+            intervensi pertama dalam kasus darurat, merujuk dan mentransfer pasien ke rumah sakit,
+            mengambil bagian dalam pertemuan Dewan Keselamatan dan Kesehatan Kerja.
+            Saya senantiasa memberikan penentuan sumber daya yang diperlukan
+            untuk pelaksanaan layanan kesehatan yang komprehensif. </p>
+          <button class="btn btn-lg btn-warning mt-4">Penasarankan yuk lihat slide berikutnya!</button>
         </div>
+      </div>
     </section>
-    <section class="row py-5">
-      <div class="col text-center">
+    <section class="row py-1 section-bg-custom2">
+      <div class="col text-center section-bg-custom">
         <!-- lorem2 -->
-        <strong>Lorem, ipsum</strong>
+        <strong class="text-center">Pengalaman saya</strong>
         <!-- lorem5 -->
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1 class="text-center">selama menjadi seorang Dokter</h1>
         <!-- lorem8 -->
-        <div class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="text-center lead mb-4">dibidang layanan kesehatan spesialis anak.</div>
         <div class="row justify-content-center">
           <div class="col-sm-5">
             <div class="row">
               <div class="col-sm-9 mb-3">
-                <input type="text" class="form-control" placeholder="Lorem ipsum dolor sit"> 
+                <input type="text" class="form-control" placeholder="Search here.">
               </div>
               <div class="col-sm-3 mb-3">
-                <button class="btn btn-warning">Button Section</button>
+                <button class="button btn btn-outline-light">Search</button>
               </div>
             </div>
           </div>
         </div>
-        <h4>
-            <!-- lorem3 -->
-            Lorem, ipsum dolor
-            <!-- lorem2 -->
-            <small class="text-muted">Lorem, ipsum.</small>
+        <h4 class="text-muted">
+          <!-- lorem3 -->
+
+          <!-- lorem2 -->
+          <small class="text-muted"></small>
         </h4>
       </div>
     </section>
     <section class="row section-bg-custom py-5">
       <div class="col text-center">
         <!-- lorem5 -->
-        <h1>Lorem ipsum dolor sit amet</h1>
+        <h1>Ini adalah 4 pahlawan seorang dokter</h1>
         <div class="row justify-content-center">
           <div class="col-sm-5">
             <!-- lorem20 -->
-            <p class="lead"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero assumenda vitae eaque a soluta vol</small></p>
+            <p class="lead"><small>berikut ini adalah penjelasan seorang 4 pahlawan dokter beserta pencapaian atau
+                penghargaannya</small></p>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-2"> 
+          <div class="col-sm-2">
             <div class="card border-warning">
               <div class="card-body" style="text-align: left;">
-                <h5>Tittle Card 1</h5>
+                <h5>Cipto Mangunkusumo</h5>
                 <!-- lorem6 -->
-                <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
+                <small class="text-muted">Salah satu tokoh pergerakan kemerdekaan Indonesia yang juga alumni STOVIA,
+                  yakni sekolah kedokteran di Batavia. Cipto Mangunkusumo dijuluki “Tiga Serangkai” karena banyak
+                  menyebarluaskan ide-ide pemerintahan sendiri dan kritis terhadap pemerintahan Hindia Belanda.
+                  .</small>
                 <div class="my-4">
-                  <div class="badge bg-success">Badge</div> 
+                  <div class="badge bg-success">Indonesia</div>
                 </div>
-                <h4><div class="text-warning" style="display: inline;">Warning</div> Text</h4>
+                <h4>
+                  <div class="text-warning" style="display: inline;"></div>
+                </h4>
                 <div class="text-center my-4">
-                  <button type="button" class="btn btn-outline-warning">Button Card</button>
+                  <button type="button" class="btn btn-outline-warning">Usia: 57</button>
                 </div>
-                <div class="text-muted">Flex Row</div>
+                <div class="text-muted">Pencapaian</div>
                 <div class="d-flex flex-row justify-content-between">
                   <div class="d-flex flex-row">
                     <div class="p-2">
-                      <i class="bi-check-circle-fill" style="color: #efa500;"></i>
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Balfas. (1952). Dr. Tjipto Mangoenkoesoemo: Demokrat Sejati. Jakarta:
+                      Pradjaparamita.</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Cipto menghabiskan masa mudanya di STOVIA dengan belajar ilmu kedokteran dengan
+                      gigih.</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Cipto juga gigih dalam memperjuangkan kemerdekaan bangsa Indonesia atas Belanda. Ia
+                      melawan Belanda dengan menulis berbagai karangan-karangan yang merepresentasikan kondisi rakyat
+                      Indonesia.</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Hasri Ainun Habibie</h5>
+                <!-- lorem6 -->
+                <small class="text-muted">Hasri Ainun adalah mata yang indah. Ia mendapatkan gelar dokter dari Fakultas
+                  Kedokteran Universitas Indonesia pada tahun 1961 dan bekerja di Rumah Sakit Cipto Mangunkusumo,
+                  Jakarta.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">Indonesia</div>
+                </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;"></div>
+                </h4>
+                <div class="text-center my-4">
+                  <button type="button" class="btn btn-outline-warning">Usia:72</button>
+                </div>
+                <div class="text-muted">Pencapaian</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Ainun mendapatkan beberapa penghargaan tertinggi bintang mahaputra.diberikan oleh
+                      pemerintah sbg penghargaan kepada warga yang dianggap memiliki peran besar terhadap negara.</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Ainun Habibie melanjutkan pendidikannya di Fakultas Kedokteran Universitas
+                      Indonesia dan dinyatakan lulus sebagai dokter pada 1961.</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
+                    </div>
+                    <div class="p-2">Ainun Habibie juga mendapatkan penghargaan Bintang Mahaputera Adipurna,dan Bintang
+                      Mahaputera Adipradana pada 6 Agustus 1998.</div>
+                  </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card border-warning">
+              <div class="card-header">Card Header</div>
+              <div class="card-body" style="text-align: left;">
+                <h5>Prof Dr Sardjito</h5>
+                <!-- lorem6 -->
+                <small class="text-muted">Dokter Sardjito adalah orang dibalik berdirinya Palang Merah Indonesia (PMI).
+                  Selain itu, dokter Sardjito juga berhasil menciptakan calcusol, yaitu obat penghancur batu ginjal yang
+                  dinamakan calcusol.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">indonesia</div>
+                </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;"></div>
+                </h4>
+                <div class="text-center my-4">
+                  <button type="button" class="btn btn-warning">Usia:80</button>
+                </div>
+                <div class="text-muted">Pencapaian</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
                     </div>
                     <div class="p-2">Bootstrap Icon</div>
                   </div>
                   <div class="p-2">
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                       <i class="bi-question-circle-fill"></i>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
                     </span>
                   </div>
                 </div>
@@ -255,214 +304,106 @@
                     <div class="p-2">bootstrap icon</div>
                   </div>
                   <div class="p-2">
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                       <i class="bi-question-circle-fill"></i>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
                     </span>
                   </div>
                 </div>
                 <div class="d-flex flex-row justify-content-between">
                   <div class="d-flex flex-row">
                     <div class="p-2">
-                      <i class="bi-x-circle-fill" style="color: #e20000;"></i>
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
                     </div>
                     <div class="p-2">Bootstrap Icon</div>
                   </div>
                   <div class="p-2">
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                       <i class="bi-question-circle-fill"></i>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
                     </span>
                   </div>
                 </div>
                 <hr>
                 <div class="text-center">
                   <button class="btn btn-primary">Button</button>
-                 </div>
+                </div>
               </div>
             </div>
           </div>
-            <div class="col-sm-2"> 
-              <div class="card">
-                <div class="card-body" style="text-align: left;">
-                  <h5>Tittle Card 2</h5>
-                  <!-- lorem6 -->
-                  <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
-                  <div class="my-4">
-                    <div class="badge bg-success">Badge</div> 
-                  </div>
-                  <h4><div class="text-warning" style="display: inline;">Warning</div> Text</h4>
-                  <div class="text-center my-4">
-                    <button type="button" class="btn btn-outline-warning">Button Card</button>
-                  </div>
-                  <div class="text-muted">Flex Row</div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-check-circle-fill" style="color: #efa500;"></i>
-                      </div>
-                      <div class="p-2">Bootstrap Icon</div>
-                    </div>
-                    <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
-                      </div>
-                      <div class="p-2">bootstrap icon</div>
-                    </div>
-                    <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-x-circle-fill" style="color: #e20000;"></i>
-                      </div>
-                      <div class="p-2">Bootstrap Icon</div>
-                    </div>
-                    <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="text-center">
-                    <button class="btn btn-primary">Button</button>
-                    </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <div class="card-body" style="text-align: left;">
+                <h5>Akmal Taher</h5>
+                <!-- lorem6 -->
+                <small class="text-muted"> seorang dokter spesialis urologi, guru besar Fakultas Kedokteran Universitas
+                  Indonesia dan pemegang paten inhibitor phosphodiesterase IV di Jerman, Amerika Serikat, Kanada dan
+                  Jepang.</small>
+                <div class="my-4">
+                  <div class="badge bg-success">Indonesia</div>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-2"> 
-              <div class="card border-warning">
-                <div class="card-header">Card Header</div>
-                <div class="card-body" style="text-align: left;">
-                  <h5>Tittle Card 3</h5>
-                  <!-- lorem6 -->
-                  <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
-                  <div class="my-4">
-                    <div class="badge bg-success">Badge</div> 
-                  </div>
-                  <h4><div class="text-warning" style="display: inline;">Warning</div> Text</h4>
-                  <div class="text-center my-4">
-                    <button type="button" class="btn btn-warning">Button Card</button>
-                  </div>
-                  <div class="text-muted">Flex Row</div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-check-circle-fill" style="color: #efa500;"></i>
-                      </div>
-                      <div class="p-2">Bootstrap Icon</div>
-                    </div>
-                    <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
-                      </div>
-                      <div class="p-2">bootstrap icon</div>
-                    </div>
-                    <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-x-circle-fill" style="color: #e20000;"></i>
-                      </div>
-                      <div class="p-2">Bootstrap Icon</div>
-                    </div>
-                    <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="text-center">
-                    <button class="btn btn-primary">Button</button>
-                    </div>
+                <h4>
+                  <div class="text-warning" style="display: inline;"></div>
+                </h4>
+                <div class="text-center my-4">
+                  <button type="button" class="btn btn-outline-warning">Usia:68</button>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-2"> 
-              <div class="card">
-                <div class="card-body" style="text-align: left;">
-                  <h5>Tittle Card 4</h5>
-                  <!-- lorem6 -->
-                  <small class="text-muted">Lorem ipsum dolor sit amet consectetur.</small>
-                  <div class="my-4">
-                    <div class="badge bg-success">Badge</div> 
-                  </div>
-                  <h4><div class="text-warning" style="display: inline;">Warning</div> Text</h4>
-                  <div class="text-center my-4">
-                    <button type="button" class="btn btn-outline-warning">Button Card</button>
-                  </div>
-                  <div class="text-muted">Flex Row</div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-check-circle-fill" style="color: #efa500;"></i>
-                      </div>
-                      <div class="p-2">Bootstrap Icon</div>
-                    </div>
+                <div class="text-muted">Pencapaian</div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
                     <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
                     </div>
+                    <div class="p-2">Akmal taher Satyalancana Karya Satya 20 tahun (2004)
+                      Pemenang terbaik kedua pada “Medika Award” dalam artikel ilmiah dalam majalah Medika (2002) </div>
                   </div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
-                      </div>
-                      <div class="p-2">bootstrap icon</div>
-                    </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
                     <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
                     </div>
+                    <div class="p-2">akmal taher Hasil terbaik pada “Riset Unggulan Terpadu” dari Menteri Riset dan
+                      Teknologi (1997)
+                      All Star Award Galamedika (1996)</div>
                   </div>
-                  <div class="d-flex flex-row justify-content-between">
-                    <div class="d-flex flex-row">
-                      <div class="p-2">
-                        <i class="bi-x-circle-fill" style="color: #e20000;"></i>
-                      </div>
-                      <div class="p-2">Bootstrap Icon</div>
-                    </div>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between">
+                  <div class="d-flex flex-row">
                     <div class="p-2">
-                      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Popover">
-                         <i class="bi-question-circle-fill"></i>
-                      </span>
+                      <i class="bi-check-circle-fill" style="color: #00ab11;"></i>
                     </div>
+                    <div class="p-2">akmal taher Grosshardener Innovationpreis, Jerman (1994)
+                      “Peneliti Muda Terbaik” di Bidang Kesehatan LIPI Indonesia (1993)</div>
                   </div>
-                  <hr>
-                  <div class="text-center">
-                    <button class="btn btn-primary">Button</button>
+                  <div class="p-2">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-placement="top"
+                      data-bs-trigger="hover focus" data-bs-content="Popover">
+                      <i class="bi-question-circle-fill"></i>
+                    </span>
                   </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button class="btn btn-primary">Button</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section class="row section-bg-custom justify-content-center py-5">
       <div class="col-sm-8">
@@ -470,387 +411,422 @@
           <div class="card-body">
             <div class="row p-4">
               <div class="col-sm-6 order-md-last text-center">
-                <img src="images/woman_working_1.svg" alt="ilustration-2" class="ilustration-2">
+                <div class="bounceInDown">
+                <img src="images/target.png" alt="ilustration-2" class="ilustration-2"></div>
               </div>
               <div class="col-sm-6">
-              <!-- lorem6 -->
-             <h1 class="mb-4">Lorem ipsum dolor sit amet consectetur.</h1>
-              <!-- lorem25 -->
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquid dicta unde molestias libero sunt rem cupiditate omnis. Soluta earum nihil nulla fugit commodi facilis.</p>
-              <button class="btn btn-lg btn-warning mt-4">Button Section</button>
+                <!-- lorem6 -->
+                <h1 class="mb-4">Visi dan Misi saya sebagai dokter.</h1>
+                <!-- lorem25 -->
+                <p>Visinya Menjadi institusi kedokteran bereputasi internasional, mampu menghasilkan Dokter yang
+                  kompeten, profesional, dan mewujudkan Program Studi (PS) Profesi Dokter sebagai pusat pengembangan
+                  IPTEK dan berorientasi pada Kedokteran Komunitas.
+                  Untuk misi nya: Menyelenggarakan pendidikan dan pengajaran layanan kesehatan berkualitas dan
+                  terstandar kepada dokter muda, untuk menghasilkan lulusan profesi dokter yang kompeten, profesional,
+                  bermoral dan beretika serta berorientasi pada kedokteran komunitas.
+                  Mengembangkan riset klinik dan pengabdian masyarakat berbasis IPTEK Kedokteran, dengan hasil riset
+                  yang bermanfaat dan memberikan solusi pada masalah kesehatan di masyarakat.
+                  Menyelenggarakan tata kelola Program Studi Profesi Dokter berkualitas berbasis good faculty governance
+                  Meningkatkan kerjasama dengan berbagai institusi di dalam dan luar negeri dalam rangka pelaksanaan Tri
+                  Dharma Perguruan Tinggi
+                  Mengembangkan program pendukung internasionalisasi Program Studi Profesi Dokter, Fakultas dan
+                  Universitas Gadjah Mada
+                </p>
+                <button class="btn btn-lg btn-warning mt-4">klik ini untuk tips sukses sebagai dokter</button>
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="row section-bg-custom justify-content-center py-5">
-    <div class="col-sm-8">
-      <div class="row">
-        <div class="col-sm-6 text-center">
-            <img src="images/youtube_illustration.svg" alt="ilustration-3" class="ilustration-3">
+    </section>
+    <section class="row section-bg-custom justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <div class="bounceInDown">
+            <img src="images/people1.png" alt="ilustration-3" class="ilustration-3"></div>
+          </div>
+          <div class="col-sm-6 section5-1">
+            <!-- lorem2 -->
+            <h5 class="text-muted">Tips yang ke-1.</h5>
+            <!-- lorem4 -->
+            <h1>Mengambil Jurusan IPA.</h1>
+            <!-- lorem35 -->
+            <p>Mengambil jurusan Ilmu Pengetahuan Alam (IPA) saat SMA adalah langkah awal mendapat peluang masuk
+              kedokteran. Lantaran, jurusan IPA mencakup mata pelajaran seperti Biologi, Fisika, Kimia, dan Matematika
+              yang mana memiliki relevansi materi dengan ilmu kedokteran.</p>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-sm-6 text-center order-md-last">
+            <div class="bounceInDown">
+            <img src="images/people2.png" alt="ilustration-4" class="ilustration-3"></div>
+          </div>
+          <div class="col-sm-6 section5-1">
+            <!-- lorem3 -->
+            <h5 class="text-muted">Tips yang ke-2.</h5>
+            <!-- lorem5 -->
+            <h1>Nilai Rapor yang Baik.</h1>
+            <!-- lorem30 -->
+            <p>Memiliki nilai rapor yang baik menjadi syarat selanjutnya untuk mendaftar di jurusan kedokteran. Saat
+              ini, mendaftar masuk universitas dapat diambil melalui salah satu dari tiga jalur yang ada, antara lain
+              Seleksi Nasional Berdasarkan Prestasi (SNBP), Seleksi Nasional Berdasarkan Tes (SNBT), dan seleksi mandiri
+              oleh PTN.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <div class="bounceInDown">
+            <img src="images/people3.png" alt="ilustration-5" class="ilustration-3"></div>
+          </div>
+          <div class="col-sm-6 section5-1">
+            <!-- lorem3 -->
+            <h5 class="text-muted">Tips yang ke-3.</h5>
+            <!-- lorem6 -->
+            <h1>Menjadi Pelajar Aktif.</h1>
+            <!-- lorem35 -->
+            <p>Saat berada di bangku SMA, inilah kesempatan kamu untuk mengumpulkan prestasi sebanyak-banyaknya. Salah
+              satunya yaitu mengikuti lomba penelitian. Pengalaman atau penghargaan atas lomba yang didapat akan
+              memberikan nilai lebih saat mendaftar di jurusan Kedokteran.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6 section5-1">
-        <!-- lorem2 -->
-        <h5 class="text-muted">Lorem, ipsum.</h5>
-        <!-- lorem4 -->
-        <h1>Lorem ipsum dolor sit.</h1>
-        <!-- lorem35 -->
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet sapiente mollitia porro molestias aperiam consequatur exercitationem officia accusamus a dolorum et ratione perspiciatis eos deleniti similique quis labore, quidem voluptates itaque officiis quos dolorem tempore.</p>
-       </div>
-     </div>
-     <div class="row my-5">
-      <div class="col-sm-6 text-center order-md-last">
-        <img src="images/catp_computer_illustration.svg" alt="ilustration-4" class="ilustration-3">
-      </div>
-      <div class="col-sm-6 section5-1">
-        <!-- lorem3 -->
-        <h5 class="text-muted">Lorem, ipsum dolor.</h5>
-        <!-- lorem5 -->
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <!-- lorem30 -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium sit placeat rem blanditiis maxime ullam dignissimos, dolorem tempora sunt! Praesentium nisi quaerat, a deserunt molestias veniam odit provident explicabo?</p>
-      </div>
-     </div>
-     <div class="row">
-      <div class="col-sm-6 text-center">
-        <img src="images/monitor.svg" alt="ilustration-5" class="ilustration-3">
-      </div>
-      <div class="col-sm-6 section5-1">
-        <!-- lorem3 -->
-        <h5 class="text-muted">Lorem, ipsum dolor.</h5>
-        <!-- lorem6 -->
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <!-- lorem35 -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quos voluptatum repellendus quibusdam rerum commodi eum mollitia? Sed repudiandae et, nihil est illum impedit placeat asperiores recusandae iure commodi laudantium fugiat incidunt magnam rem reiciendis!</p>
-      </div>
-     </div>
-   </div>
-  </section>
-  <section class="row justify-content-center py-5">
-    <div class="col-sm-8">
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-          <div class="row">
-            <div class="col-sm-8">
+    </section>
+    <section class="row justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <div class="row">
+              <div class="col-sm-8">
                 <i class="bi bi-quote icon-quote"></i>
                 <div class="quote mb-5">
                   <!-- lorem17 -->
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint nulla reiciendis nemo similique commodi beatae earum."
+                  "Akan datang suatu hari ayah, ibu, dan kakak tersenyum disaat aku menjadi seorang dokter. Karna dokter
+                  adalah suatu cita-cita yang sangat aku inginkan dari sejak kecil raihlah cita cita dokter itu dan
+                  disuatu hari yg akan datang nanti baju yang sama dengan senyum bangga mengantarkanku untuk memakai
+                  baju toga dan menjadi saksi sumpah dokterku nanti. Tunggu ya!!."
                 </div>
-                <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
-            </div>
-            <div class="col-sm-4">
-              <img src="images/robot.svg" alt="" class="img-fluid">
-              <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum dolor</p>
-              <p class="picuture-tab-desc text-center">Lorem ipsum dolor sit amet</p>
+                <button class="btn btn-lg btn-warning text-primary">SEMANGAT MERAIH CITA-CITANYA YA!</button>
+              </div>
+              <div class="col-sm-4">
+                <div class="bounceInDown">
+                <img src="images/people4.png" alt="" class="img-fluid"></div>
+                <p class="picture-tab-title text-center mt-3 mb-1">Nadifa Dwi Cahyani</p>
+                <p class="picuture-tab-desc text-center">Bogor, 11-juni-2007</p>
+              </div>
             </div>
           </div>
-        </div>
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
             <div class="row">
-            <div class="col-sm-8">
+              <div class="col-sm-8">
                 <i class="bi bi-quote icon-quote"></i>
                 <div class="quote mb-5">
                   <!-- lorem18 -->
-                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eligendi ex reprehenderit et non quo eaque sequi?."
+                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eligendi ex reprehenderit
+                  et non quo eaque sequi?."
                 </div>
                 <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
-            </div>
-            <div class="col-sm-4">
+              </div>
+              <div class="col-sm-4">
                 <img src="images/robot.svg" alt="" class="img-fluid">
                 <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum dolor sit</p>
                 <p class="picture-tab-desc text-center">Lorem ipsum dolor</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
             <div class="row">
               <div class="col-sm-8">
-                  <i class="bi bi-quote icon-quote"></i>
-                  <div class="quote mb-5">
-                    <!-- lorem16 -->
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt fuga ratione illum saepe fugit dolorem."
-                  </div>
-                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                <i class="bi bi-quote icon-quote"></i>
+                <div class="quote mb-5">
+                  <!-- lorem16 -->
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt fuga ratione illum saepe
+                  fugit dolorem."
+                </div>
+                <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
               </div>
               <div class="col-sm-4">
-                  <img src="images/robot.svg" alt="" class="img-fluid">
-                  <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum dolor sit</p>
-                  <p class="picture-tab-desc text-center">Lorem ipsum dolor </p>
+                <img src="images/robot.svg" alt="" class="img-fluid">
+                <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum dolor sit</p>
+                <p class="picture-tab-desc text-center">Lorem ipsum dolor </p>
               </div>
             </div>
           </div>
-      </div>
-      <nav class="mt-5">
-        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-            <!-- lorem3 -->
-            <p class="link-tab-title">Lorem ipsum dolor</p>
-            <!-- lorem5 -->
-            <p class="link-tab-desc">Lorem ipsum dolor sit amet</p>
-          </button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-            <!-- lorem4 -->
-            <p class="link-tab-title">Lorem ipsum dolor sit</p>
-            <!-- lorem3 -->
-            <p class="link-tab-desc">Lorem ipsum dolor</p>
-          </button>
-          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
-            <!-- lorem2 -->
-            <p class="link-tab-title">Lorem ipsum</p>
-            <!-- lorem4 -->
-            <p class="link-tab-desc">Lorem ipsum dolor sit</p>
-          </button>
         </div>
-      </nav>
-    </div>
-  </section>
-  <section class="row section-bg-custom justify-content-center py-5">
-    <div class="col-sm-8">
-      <h1 class="mb-5 text-center">Lorem ipsum dolor sit amet</h1>
-      <div class="accordion" id="accordionExample">
-          <div class="accordion-item mb-3">
-              <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                  </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                      collapse plugin adds the appropriate classes that we use to style each element. These
-                      classes control the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or overriding our default variables.
-                      It's also worth noting that just about any HTML can go within the
-                      <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
+        <nav class="mt-5">
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-email-tab" data-bs-toggle="tab" data-bs-target="#nav-email"
+              type="button" role="tab" aria-controls="nav-email" aria-selected="true">Email</button>
+            <!-- lorem3 -->
+            <p class="link-tab-title">nadifadc@gmail.com</p>
+            <!-- lorem5 -->
+            <p class="link-tab-desc"></p>
+            </button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+            <!-- lorem4 -->
+            <p class="link-tab-title">Nadifa Dwi Cahyani</p>
+            <!-- lorem3 -->
+            <p class="link-tab-desc"></p>
+            </button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+              type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+            <!-- lorem2 -->
+            <p class="link-tab-title">+6281586368675</p>
+            <!-- lorem4 -->
+            <p class="link-tab-desc"></p>
+            </button>
           </div>
-          <div class="accordion-item mb-3">
-              <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                  </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                  data-bs-parent="accordionExample">
-                  <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                      the collapse plugin adds the appropriate classes that we use to style each element. These
-                      classes control the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or overriding our default variables.
-                      It's also worth noting that just about any HTML can go within the
-                      <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item mb-3">
-              <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                  </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                      collapse plugin adds the appropriate classes that we use to style each element. These
-                      classes control the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or overriding our default variables.
-                      It's also worth noting that just about any HTML can go within the
-                      <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item mb-3">
-              <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #4
-                  </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                      collapse plugin adds the appropriate classes that we use to style each element. These
-                      classes control the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or overriding our default variables.
-                      It's also worth noting that just about any HTML can go within the
-                      <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
-          <div class="accordion-item mb-3">
-              <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseThree">
-                      Accordion Item #5
-                  </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" style>
-                  <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                      collapse plugin adds the appropriate classes that we use to style each element. These
-                      classes control the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or overriding our default variables.
-                      It's also worth noting that just about any HTML can go within the
-                      <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-              </div>
-          </div>
+        </nav>
       </div>
-  </div>
-</section>
-</main>
-<footer class="container-fluid py-2 bg-black text-warning">
-  <div class="row justify-content-center my-5">
-    <div class="col-sm-10">
-      <div class="row">
+    </section>
+    <section class="row section-bg-custom justify-content-center py-5">
+      <div class="col-sm-8">
+        <h1 class="mb-5 text-center">Nah ini dia tahapan tipS lancar kuliah kedokteran!</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                1. MEMANAGE WAKTU DENGAN BAIK
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Menjadi mahasiswa kedokteran mengharuskan kamu untuk mengelola waktu secara efektif.
+                  Disiplin adalah kunci utama dalam mengatasi jadwal yang padat.
+                  Mulailah dengan menyusun jadwal yang teratur dan berkomitmen untuk mengikuti jadwal tersebut.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2. CARA TEKNIK BELAJAR CEPAT
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="accordionExample">
+              <div class="accordion-body">
+                <strong>Menemukan metode belajar yang tepat sangatlah penting. Banyaknya materi yang perlu dihafal
+                  dan dipraktikkan menjadi salah satu kesulitan yang dihadapi mahasiswa kedokteran.
+                  Namun hal tersebut dapat diminimalisir dengan menemukan karakter belajar. Contohnya, ada berbagai cara
+                  untuk memahami materi,
+                  seperti merekam kuliah, membuat catatan, atau berdiskusi dengan teman. Kenali gaya belajar kamu dan
+                  terapkan metode yang sesuai.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3. MANFAATKAN SEMESTER PERTAMA
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Semester awal biasanya berisi mata kuliah dasar yang membentuk dasar penting untuk studi
+                  kedokteran selanjutnya.
+                  Upayakan untuk meraih nilai tinggi di semester pertama, karena pemahaman materi dasar ini akan sangat
+                  berguna di masa mendatang.
+                  Dengan mengusahakan mendapatkan nilai A di tiap mata kuliah, nantinya nilai tersebut dapat membantu
+                  mendongkrak IPK ke depannya.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                4. MEMBUAT KELOMPOK BELAJAR
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Berada di kelompok belajar dipercayai lebih mempermudah dalam memahami sebuah materi. Kamu dapat
+                  memecahkan segala kesulitan.
+                  Selain pemahaman materi, kamu juga dapat menyelesaikan tugas lebih efisien. Ilmu pengetahuan pun juga
+                  akan bertambah.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                aria-expanded="true" aria-controls="collapseThree">
+                5. MENGIKUTI ORGANISASI
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" style>
+              <div class="accordion-body">
+                <strong>Penting untuk ikut aktif dalam organisasi kemahasiswaan. Tak hanya membangun keterampilan
+                  sosial,
+                  tetapi skills tersebut juga akan membantu kamu mengembangkan keterampilan kepemimpinan yang berguna di
+                  dunia kerja nantinya.
+                  Organisasi dapat menjadi wadah untuk mengasah kemampuan di luar akademik.
+                  Berikut adalah tips dan persiapan bagi kamu yang ingin menempuh jenjang karier sebagai seorang dokter.
+                  Tak terkecuali dari poin-poin di atas, dengan persiapan cermat dan semangat yang kuat akan membantu
+                  kamu mencapai impian tersebut.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid py-2 bg-black text-warning">
+    <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        <div class="row">
           <div class="col-sm-3 mb-5">
             <div class="mb-4 text-center">
-              <img src="images/pesat.png" alt="Logo Pesat" width="40px" class="d-inline-block">PESAT
+              <img src="images/Halodoc.png" alt="Logo HALODOC" width="40px" class="d-inline-block">HALODOC
             </div>
-            <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reprehenderit accusantium aliquam sunt vitae possimus ducimus debitis sit laudantium atque.</p>
-            <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia similique repellat earum, itaque quisquam!</p>
+            <p class="mb-3">perlu diingat ya teman teman bahwa Seorang dokter mempunyai peran sentral dalam memberikan
+              pelayanan kesehatan. Maka dalam melaksanakan tugas keprofesiannya, seorang dokter harus mempunyai karakter
+              3 K, yakni Kesantunan, Kesejawatan, dan Kebersamaan.</p>
+            <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat mollitia similique
+              repellat earum, itaque quisquam!</p>
             <p class="mb-1">Email: <a href="mailto:nadifadc@gmail.com">nadifadc@gmail.com</a></p>
             <p class="mb-3">Whatsapp: <a href="https://wa.me/+6281586368675" target="_blank">081586368675</a></p>
             <div class="d-flex flex-row mb-2">
-                <a href="https://www.facebook.com" class="text-warning social-icon" target="_blank">
-                  <i class="bi bi-facebook"></i>
-                </a>
-                  <a href="https://www.instagram.com" class="text-warning social-icon mx-4" target="_blank">
-                      <i class="bi bi-instagram"></i>
-                  </a>
-                  <a href="https://id.linkedin.com" class="text-warning social-icon" target="_blank">
-                      <i class="bi bi-linkedin"></i>
-                  </a>
-              </div>
-              <div class="d-flex  flex-row">
-                  <a href="https://www.twitter.com" class="text-warning social-icon" target="_blank">
-                      <i class="bi bi-twitter"></i>
-                  </a>
-                  <a href="https://www.tiktok.com" class="text-warning social-icon mx-4" target="_blank">
-                      <i class="bi bi-tiktok"></i>
-                  </a>
-                  <a href="https://www.youtube.com" class="text-warning social-icon" target="_blank">
-                      <i class="bi bi-youtube"></i>
-                  </a>
-              </div>
-          </div>
-          <div class="col-sm-2 text-center">
-              <div class="mb-3"><strong>Title Menu 1</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-                  <a href="#" class="menu-footer">Menu Footer 6</a>
-                  <a href="#" class="menu-footer">Menu Footer 7</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 2</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 3</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-              </div>
-          </div>
-          <div class="col-sm-2 text-center">
-              <div class="mb-3"><strong>Title Menu 4</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 5</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 6</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-              </div>
-          </div>
-          <div class="col-sm-2 text-center">
-          <div class="mb-3"><strong>Title Menu 7</strong></div>
-          <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 8</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 9</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-              </div>
+              <a href="https://www.facebook.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com" class="text-warning social-icon mx-4" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://id.linkedin.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
             </div>
-            <div class="col-sm-2 text-center">
-              <div class="mb-3"><strong>Title Menu 10</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 11</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-              </div>
-              <div class="mb-3"><strong>Title Menu 12</strong></div>
-              <div class="mb-3">
-                  <a href="#" class="menu-footer">Menu Footer 1</a>
-                  <a href="#" class="menu-footer">Menu Footer 2</a>
-                  <a href="#" class="menu-footer">Menu Footer 3</a>
-                  <a href="#" class="menu-footer">Menu Footer 4</a>
-                  <a href="#" class="menu-footer">Menu Footer 5</a>
-              </div>
+            <div class="d-flex  flex-row">
+              <a href="https://www.twitter.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.tiktok.com" class="text-warning social-icon mx-4" target="_blank">
+                <i class="bi bi-tiktok"></i>
+              </a>
+              <a href="https://www.youtube.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </div>
           </div>
-      </div>
-      <hr style="border-width: 5px;">
-      <div class="row justify-content-between">
+          <div class="col-sm-2 text-center">
+            <div class="mb-3"><strong>Title Menu 1</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+              <a href="#" class="menu-footer">Menu Footer 6</a>
+              <a href="#" class="menu-footer">Menu Footer 7</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 2</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 3</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+            </div>
+          </div>
+          <div class="col-sm-2 text-center">
+            <div class="mb-3"><strong>Title Menu 4</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 5</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 6</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+            </div>
+          </div>
+          <div class="col-sm-2 text-center">
+            <div class="mb-3"><strong>Title Menu 7</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 8</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 9</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+            </div>
+          </div>
+          <div class="col-sm-2 text-center">
+            <div class="mb-3"><strong>Title Menu 10</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 11</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+            </div>
+            <div class="mb-3"><strong>Title Menu 12</strong></div>
+            <div class="mb-3">
+              <a href="#" class="menu-footer">Menu Footer 1</a>
+              <a href="#" class="menu-footer">Menu Footer 2</a>
+              <a href="#" class="menu-footer">Menu Footer 3</a>
+              <a href="#" class="menu-footer">Menu Footer 4</a>
+              <a href="#" class="menu-footer">Menu Footer 5</a>
+            </div>
+          </div>
+        </div>
+        <hr style="border-width: 5px;">
+        <div class="row justify-content-between">
           <div class="col-sm-6">Copyright &copy;2023 Pesat</div>
           <div class="col-sm-6 text-end">Powered By Studentday Web Design</div>
+        </div>
       </div>
-  </div>
-</div>
-</footer>
-<script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
-<script>
-const popoverTriggerList= document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerE1 => new bootstrap.Popover(popoverTriggerE1))
-</script>
+    </div>
+  </footer>
+  <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerE1 => new bootstrap.Popover(popoverTriggerE1))
+  </script>
 </body>
-</html>
 
+</html>
